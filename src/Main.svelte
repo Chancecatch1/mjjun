@@ -7,8 +7,8 @@
   let i = 0;
   const fullText = `Hello, \nI am ${name}!`;
   const typingSpeed = 150;
-  let showImage = false;
-  let showMenu = false;
+  let typingComplete = false;
+
   const menuItems = [
     {
       name: "About",
@@ -42,7 +42,7 @@
       translateX: 20,
       translateY: 10,
     },
-  ].map((item) => ({ ...item, visible: false }));
+  ];
 
   onMount(() => {
     const typeWriter = () => {
@@ -51,8 +51,7 @@
         i++;
         setTimeout(typeWriter, typingSpeed);
       } else {
-        showMenu = true;
-        showImage = true;
+        typingComplete = true;
       }
     };
     typeWriter();
@@ -65,9 +64,9 @@
 
 <main>
   <h1>{displayedText}</h1>
-  {#if showMenu}
+  {#if typingComplete}
     <div class="menu">
-      {#each menuItems as item, index}
+      {#each menuItems as item}
         <button
           class="menu-item"
           style="background-color: {item.color}; transform: translate({item.translateX}px, {item.translateY}px) rotate({item.rotation}deg);"
@@ -77,10 +76,8 @@
         </button>
       {/each}
     </div>
-  {/if}
-  {#if showImage}
     <div class="image-container">
-      <img src="/images/mj_index_1.png" alt="MJ" class="center-image fade-in" />
+      <img src="/images/mj_index_1.png" alt="MJ" class="fade-in" />
     </div>
   {/if}
 </main>
@@ -88,12 +85,13 @@
 <style>
   main {
     text-align: center;
-    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
+    padding: 1em;
+    box-sizing: border-box;
   }
 
   h1 {
@@ -110,18 +108,28 @@
     gap: 20px;
   }
 
-  /* 위치 및 각도 조정: 먼저 위치를 이동한 후 요소를 회전시킵니다. */
   .menu-item {
     transition: transform 0.3s ease-in-out;
     transform-origin: center;
     border-radius: 50px;
-    animation: fadeIn 0.5s forwards;
+    animation: fadeIn 1s forwards;
   }
 
-  img {
-    max-width: 90%;
-    height: auto;
-    max-height: 65vh;
+  .image-container {
+    width: 60%; /* max-width 대신 width 사용 */
+    height: 60vh; /* max-height 대신 height 사용 */
+    margin: 0 auto;
+    padding: 0;
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+  }
+
+  .fade-in {
+    max-width: 100%; /* 컨테이너에 맞춰 최대 너비 설정 */
+    max-height: 100%; /* 컨테이너에 맞춰 최대 높이 설정 */
+    object-fit: contain; /* 이미지 비율 유지 */
+    animation: fadeIn 2s ease-in-out;
   }
 
   @keyframes fadeIn {
