@@ -1,3 +1,5 @@
+<!-- path: /usr/local/var/www/mjjun/src/routes/Router.svelte -->
+
 <script>
   import { wrap } from "svelte-spa-router/wrap";
   import Router from "svelte-spa-router";
@@ -14,10 +16,18 @@
       component: Main,
       props: { name },
     }),
-    "/about": About,
-    "/contact": Contact,
-    "/works": Works,
-    "/writing": Writing,
+    "/about": wrap({
+      component: About,
+    }),
+    "/contact": wrap({
+      component: Contact,
+    }),
+    "/works": wrap({
+      component: Works,
+    }),
+    "/writing": wrap({
+      component: Writing,
+    }),
   };
 </script>
 

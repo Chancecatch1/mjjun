@@ -1,3 +1,5 @@
+<!-- /usr/local/var/www/mjjun/src/About.svelte -->
+
 <script>
   // About 페이지 스크립트 섹션 (필요한 경우)
 </script>

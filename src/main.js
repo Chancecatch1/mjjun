@@ -1,3 +1,5 @@
+// path: /usr/local/var/www/mjjun/src/main.js
+
 import "../public/global.css";
 import App from "./App.svelte";
 

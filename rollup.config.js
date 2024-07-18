@@ -1,3 +1,5 @@
+// path: /usr/local/var/www/mjjun/rollup.config.js
+
 import svelte from "rollup-plugin-svelte";
 import commonjs from "@rollup/plugin-commonjs";
 import terser from "@rollup/plugin-terser";
