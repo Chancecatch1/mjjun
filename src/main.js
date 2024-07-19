@@ -1,13 +1,17 @@
 // path: /usr/local/var/www/mjjun/src/main.js
 
+import "./i18n";
+import { setupI18n } from "./i18n";
 import "../public/global.css";
 import App from "./App.svelte";
 
-const app = new App({
-  target: document.body,
-  props: {
-    name: "MJ", // 여기서 당신의 이름을 설정합니다.
-  },
+setupI18n().then(() => {
+  const app = new App({
+    target: document.body,
+    props: {
+      name: "MJ",
+    },
+  });
 });
 
 export default app;
