@@ -1,11 +1,9 @@
 import { c as create_ssr_component } from "../../chunks/ssr.js";
-const css = {
-  code: "html{background-color:#f3f4f6}",
-  map: '{"version":3,"file":"+page.svelte","sources":["+page.svelte"],"sourcesContent":["<h1 class=\\"text-3xl font-bold underline\\">Hello world!</h1>\\n\\n<style lang=\\"postcss\\">\\n\\t:global(html) {\\n\\t\\tbackground-color: #f3f4f6;\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AAGS,IAAM,CACb,gBAAgB,CAAE,OACnB"}'
-};
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css);
-  return `<h1 class="text-3xl font-bold underline" data-svelte-h="svelte-bk5epg">Hello world!</h1>`;
+  return ` <div class="w-full max-w-[1120px] mx-auto h-auto flex flex-col md:flex-row justify-between items-start py-8" data-svelte-h="svelte-55qlax"><div class="md:w-2/5 md:mr-8"><div class="text-[#181717] text-lg font-medium font-['Inter'] leading-snug">01 / Hi there! I&#39;m MJ, a machine learning engineer and data analyst</div> <div class="mt-4 text-[#606060] text-lg font-normal font-['Inter'] leading-snug">I live in Calgary, Canada. I started learning AI because I want to create useful services for
+			people. I&#39;ve worked on many projects, but I&#39;m still figuring out which area to focus on. I
+			used to plan art projects, but now I&#39;m studying computer science in Canada.</div> <div class="w-full max-w-[1120px] mx-auto mt-8 border-t border-[#181717]"></div> <div class="mt-4 text-[#181717] text-lg font-medium font-['Inter'] underline leading-snug">Main Software</div> <div class="mt-4 text-[#606060] text-sm font-normal font-['Inter'] leading-snug">Python, TensorFlow, SQL, Excel, Machine Learning, Docker</div> <div class="mt-4 text-[#181717] text-lg font-medium font-['Inter'] underline leading-snug">Main Skills</div> <div class="mt-4 text-[#606060] text-sm font-normal font-['Inter'] leading-snug">Machine Learning, Data Analysis, Computer Vision, Natural Language Processing, Front-End
+			Development, Project Management</div> <div class="w-full max-w-[1120px] mx-auto mt-8 border-t border-[#181717]"></div> <div class="mt-4 text-[#181717] text-lg font-medium font-['Inter'] underline leading-snug"><a href="mailto:myungjun1026@gmail.com">myungjun1026@gmail.com</a></div> <div class="mt-4 text-[#181717] text-sm font-normal font-['Inter'] leading-snug">If you&#39;d like, you can <a href="/resume_mj.pdf">view my resume here</a></div></div> <div class="md:w-3/5 mt-8 md:mt-0 flex justify-center"><img class="w-full max-w-[720px] h-auto" src="/favicon.png" alt="Project Image"></div></div> <div class="w-full max-w-[1120px] mx-auto mt-8 border-t border-[#181717]"></div>`;
 });
 export {
   Page as default

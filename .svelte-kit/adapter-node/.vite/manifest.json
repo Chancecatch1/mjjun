@@ -53,7 +53,7 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.wiWvkJhw.css"
+      "_app/immutable/assets/_layout.C1T9Sbu3.css"
     ]
   },
   "src/routes/+page.svelte": {
@@ -63,9 +63,24 @@
     "isEntry": true,
     "imports": [
       "_ssr.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.C3TnBFuK.css"
+    ]
+  },
+  "src/routes/playground/+page.svelte": {
+    "file": "entries/pages/playground/_page.svelte.js",
+    "name": "entries/pages/playground/_page.svelte",
+    "src": "src/routes/playground/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "src/routes/work/+page.svelte": {
+    "file": "entries/pages/work/_page.svelte.js",
+    "name": "entries/pages/work/_page.svelte",
+    "src": "src/routes/work/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
     ]
   }
 }
