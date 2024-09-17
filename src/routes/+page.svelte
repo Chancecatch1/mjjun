@@ -42,8 +42,6 @@
 	</div>
 
 	<div class="md:w-3/5 mt-8 md:mt-0 flex justify-center">
-		<img class="w-full max-w-[720px] h-auto" src="/favicon.png" alt="Project Image" />
+		<img class="w-full max-w-[720px] h-auto" src="/favicon.png" alt="MainImage" />
 	</div>
 </div>
-
-<div class="w-full max-w-[1120px] mx-auto mt-8 border-t border-[#181717]"></div>

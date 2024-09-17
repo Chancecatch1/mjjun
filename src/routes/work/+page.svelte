@@ -28,12 +28,10 @@
 			<div>
 				<h2 class="text-lg font-medium text-[#181717] mb-4">01 / PROJECT NAME</h2>
 				<p class="text-lg text-[#181717] mb-8">
-					Goblin concept digital sculpture with human-like skin. Learned a lot of quick tips and
-					look development.
+					Kopis BigData Analysis
 				</p>
 				<p class="text-sm text-[#606060] mb-8">
-					Sculpted in ZBrush, Retopologized and UVs done in Maya, Textured in Mari, Rendered using
-					Arnold.
+					Cencellation analysis with selected one of the 10 teams
 				</p>
 			</div>
 			<a href="#" class="text-lg font-medium text-[#181717] underline">
@@ -41,6 +39,4 @@
 			</a>
 		</div>
 	</div>
-
-	<div class="mt-12 border-t border-[#181717]"></div>
 </section>
