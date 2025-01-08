@@ -37,7 +37,7 @@ declare module '$env/static/private' {
 	export const CONDA_SHLVL: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const CONDA_PROMPT_MODIFIER: string;
-	export const ZDOTDIR: string;
+	export const GSETTINGS_SCHEMA_DIR_CONDA_BACKUP: string;
 	export const COLOR: string;
 	export const npm_config_noproxy: string;
 	export const npm_config_local_prefix: string;
@@ -47,14 +47,13 @@ declare module '$env/static/private' {
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const npm_execpath: string;
 	export const _CE_CONDA: string;
-	export const CONDA_PREFIX_1: string;
 	export const PATH: string;
+	export const GSETTINGS_SCHEMA_DIR: string;
 	export const npm_package_json: string;
 	export const npm_config_engine_strict: string;
 	export const _: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
-	export const USER_ZDOTDIR: string;
 	export const CONDA_PREFIX: string;
 	export const npm_command: string;
 	export const PWD: string;
@@ -67,7 +66,6 @@ declare module '$env/static/private' {
 	export const npm_config_node_gyp: string;
 	export const npm_package_version: string;
 	export const _CE_M: string;
-	export const VSCODE_INJECTION: string;
 	export const SHLVL: string;
 	export const HOME: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
@@ -129,7 +127,7 @@ declare module '$env/dynamic/private' {
 		CONDA_SHLVL: string;
 		TERM_PROGRAM_VERSION: string;
 		CONDA_PROMPT_MODIFIER: string;
-		ZDOTDIR: string;
+		GSETTINGS_SCHEMA_DIR_CONDA_BACKUP: string;
 		COLOR: string;
 		npm_config_noproxy: string;
 		npm_config_local_prefix: string;
@@ -139,14 +137,13 @@ declare module '$env/dynamic/private' {
 		__CF_USER_TEXT_ENCODING: string;
 		npm_execpath: string;
 		_CE_CONDA: string;
-		CONDA_PREFIX_1: string;
 		PATH: string;
+		GSETTINGS_SCHEMA_DIR: string;
 		npm_package_json: string;
 		npm_config_engine_strict: string;
 		_: string;
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
-		USER_ZDOTDIR: string;
 		CONDA_PREFIX: string;
 		npm_command: string;
 		PWD: string;
@@ -159,7 +156,6 @@ declare module '$env/dynamic/private' {
 		npm_config_node_gyp: string;
 		npm_package_version: string;
 		_CE_M: string;
-		VSCODE_INJECTION: string;
 		SHLVL: string;
 		HOME: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;

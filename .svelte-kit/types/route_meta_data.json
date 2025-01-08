@@ -1,5 +1,28 @@
 {
-	"/": [],
-	"/playground": [],
-	"/work": []
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/api/posts": [
+		"src/routes/api/posts/+server.ts"
+	],
+	"/rss": [
+		"src/routes/rss/+server.js"
+	],
+	"/work": [
+		"src/routes/work/+page.js",
+		"src/routes/+layout.ts"
+	],
+	"/work/category": [
+		"src/routes/work/category/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/work/category/[category]": [
+		"src/routes/work/category/[category]/+page.ts",
+		"src/routes/+layout.ts"
+	],
+	"/work/[slug]": [
+		"src/routes/work/[slug]/+page.ts",
+		"src/routes/+layout.ts"
+	]
 }

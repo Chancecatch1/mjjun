@@ -1,0 +1,13 @@
+// usr/local/var/www/mjjun/src/routes/work/[slug]/+page.ts
+
+export async function load({ params }) {
+	const post = await import(`../${params.slug}.md`);
+	const { title, date } = post.metadata;
+	const Content = post.default;
+
+	return {
+		Content,
+		title,
+		date
+	};
+}

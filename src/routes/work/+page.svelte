@@ -1,42 +1,49 @@
 <!-- usr/local/var/www/mjjun/src/routes/work/+page.svelte -->
 
 <script>
-	import { onMount } from 'svelte';
-	let ArrowSvg;
+	export let data;
 
-	onMount(async () => {
-		const response = await fetch('/arrow.svg');
-		let svgText = await response.text();
-
-		svgText = svgText.replace('<svg', '<svg width="24" height="24"');
-
-		ArrowSvg = svgText;
-	});
+	const workItems = [
+		{ title: 'service development using kopis bigdata' },
+		{ title: 'heartsignal Project' },
+		{ title: 'face detection smart door' },
+		{ title: 'prototype of smart farm' }
+	];
 </script>
 
-<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-	<div class="mb-8">
-		{@html ArrowSvg}
-	</div>
+<div class="dos-container">
+	<ul class="dos-list">
+		{#each workItems as work, index}
+			<li class="dos-item">
+				<a href={data.posts[index].path} class="dos-link">
+					{(index + 1).toString().padStart(2, '0')}. {work.title}
+				</a>
+			</li>
+		{/each}
+	</ul>
+</div>
 
-	<div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-24">
-		<div class="lg:order-2 lg:w-7/12">
-			<div class="bg-[#606060] w-full aspect-[16/9]"></div>
-		</div>
-
-		<div class="flex flex-col justify-between lg:order-1 lg:w-5/12">
-			<div>
-				<h2 class="text-lg font-medium text-[#181717] mb-4">01 / PROJECT NAME</h2>
-				<p class="text-lg text-[#181717] mb-8">
-					Kopis BigData Analysis
-				</p>
-				<p class="text-sm text-[#606060] mb-8">
-					Cencellation analysis with selected one of the 10 teams
-				</p>
-			</div>
-			<a href="#" class="text-lg font-medium text-[#181717] underline">
-				More shots from this project ↗
-			</a>
-		</div>
-	</div>
-</section>
+<style>
+	.dos-container {
+		font-family: 'Courier New', Courier, monospace;
+		background-color: #fff;
+		color: #000;
+		padding: 2rem;
+		min-height: 100vh;
+	}
+	.dos-list {
+		list-style-type: none;
+		padding: 0;
+	}
+	.dos-item {
+		padding: 0.5rem 0;
+	}
+	.dos-link {
+		color: #000;
+		text-decoration: none;
+	}
+	.dos-link:hover {
+		background-color: #000;
+		color: #fff;
+	}
+</style>

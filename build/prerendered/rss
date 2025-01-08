@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>mjjun</title>
+<description>web portfolio of mj</description>
+<link>https://www.mjjun.com</link>
+<atom:link href="https://www.mjjun.com/rss.xml" rel="self" type="application/rss+xml"/>
+
+<item>
+<guid isPermaLink="true">https://www.mjjun.com/blog//work/1</guid>
+<title>KOPIS 빅데이터 기반 공연 추천 서비스 개발</title>
+<link>https://www.mjjun.com/blog//work/1</link>
+<description>KOPIS 빅데이터 기반 공연 추천 서비스 개발</description>
+<pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+<guid isPermaLink="true">https://www.mjjun.com/blog//work/2</guid>
+<title>HeartSignal - 실시간 감정 분석 기반 데이트 매칭 서비스</title>
+<link>https://www.mjjun.com/blog//work/2</link>
+<description>HeartSignal - 실시간 감정 분석 기반 데이트 매칭 서비스</description>
+<pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+<guid isPermaLink="true">https://www.mjjun.com/blog//work/3</guid>
+<title>얼굴 인식 기반 스마트 도어 시스템</title>
+<link>https://www.mjjun.com/blog//work/3</link>
+<description>얼굴 인식 기반 스마트 도어 시스템</description>
+<pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+<guid isPermaLink="true">https://www.mjjun.com/blog//work/4</guid>
+<title>IoT 기반 스마트팜 프로토타입 개발</title>
+<link>https://www.mjjun.com/blog//work/4</link>
+<description>IoT 기반 스마트팜 프로토타입 개발</description>
+<pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
